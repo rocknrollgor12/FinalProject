@@ -250,6 +250,11 @@ body {
 
 .home-cards p {
     min-height: 60px; /* ปรับความสูงตามที่ต้องการ */
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
+    text-overflow: ellipsis; /* แสดง "..." ที่ท้ายเนื้อหาที่ถูกตัด */
+    display: -webkit-box; /* ใช้สำหรับ webkit browsers */
+    -webkit-box-orient: vertical; /* ตั้งค่าแนวของ box */
+    -webkit-line-clamp: 3; /* กำหนดจำนวนบรรทัดที่จะแสดง */
 }
 
 /* Responsive cards for smaller screens */
@@ -455,6 +460,11 @@ body {
     font-size: 1.2rem;
     text-align: left;
     margin: 15px 0;
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
+    text-overflow: ellipsis; /* แสดง "..." ที่ท้ายเนื้อหาที่ถูกตัด */
+    display: -webkit-box; /* ใช้สำหรับ webkit browsers */
+    -webkit-box-orient: vertical; /* ตั้งค่าแนวของ box */
+    -webkit-line-clamp: 2; /* กำหนดจำนวนบรรทัดที่จะแสดง */
 }
 
 .home-cards p {
