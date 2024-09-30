@@ -1,0 +1,125 @@
+/* Banner Krub */
+header {
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.banner {
+  background-color: #e2e2f9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav bar Krub */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav .logo {
+  width: 190px;
+  height: auto;
+  padding-left: 50px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li {
+  padding: 0 5px;
+  position: relative;
+}
+
+.main-nav ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+  display: block;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 50px;
+  font-size: 1rem;
+  gap: 3px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.main-menu li:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  white-space: nowrap;
+}
+
+/* Footer Krub */
+
+.footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  color: #161616;
+  bottom: -20px;
+  z-index: 100;
+  width: 100%;
+}
+.footer-bottom-fix {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-logo {
+  max-width: 190px;
+  height: auto;
+}
+
+.newsletter-link {
+  color: #6f42c1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.newsletter-link:hover {
+  text-decoration: underline;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  fill: #6f42c1;
+  margin-left: 5px;
+}

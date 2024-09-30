@@ -1,0 +1,134 @@
+<html lang="en">
+
+</html>
+
+<head>
+    <title>WholeYou Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            padding: 20px 0;
+            font-size: 13px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-nav .logo {
+            width: 190px;
+            height: auto;
+            padding-left: 50px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-nav ul li {
+            padding: 0 5px;
+            position: relative;
+        }
+
+        .main-nav ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #262626;
+            display: block;
+        }
+
+        .main-nav ul li a:hover {
+            border-bottom: 2px solid #262626;
+        }
+
+        .main-nav ul.main-menu {
+            flex: 1;
+            justify-content: flex-end;
+            padding-right: 50px;
+            font-size: 1rem;
+            gap: 3px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .main-menu li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="homepage.html" class="logo-link">
+            <img src="img/logo.png" alt="WholeYou" class="logo"></a>
+        <ul class="main-menu">
+            <li>
+                <a href="#">Service</a>
+                <div class="dropdown">
+                    <a href="#">Health check-up</a>
+                    <a href="#">Integrated Care</a>
+                    <a href="#">Surgery</a>
+                    <a href="#">Dental Care</a>
+                    <a href="#">Hospital / Clinic</a>
+                    <a href="#">Emergency Service</a>
+                    <a href="#">More Service</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Plan Your Visit</a>
+                <div class="dropdown">
+                    <a href="#">Package</a>
+                    <a href="#">Program</a>
+                    <a href="#">Appointment Scheduling</a>
+                    <a href="#">What to Expect</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Health Info</a>
+                <div class="dropdown">
+                    <a href="#">Diseases & Treatments</a>
+                    <a href="#">Healthy Living & Nutrition</a>
+                    <a href="#">Events</a>
+                    <a href="#">Blog / E-Newsletter</a>
+                    <a href="#">Research & Education</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="dropdown">
+                    <a href="#">Our Mission</a>
+                    <a href="#">Our Values</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Partnerships</a>
+                    <a href="#">Career</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </li>
+            <li>
+                <a href="login.html">Login / Sign in</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

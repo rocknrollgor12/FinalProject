@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        /*Hero Jaaa ปัญหาเยอะ อิดก*/
+        hero {
+            padding: 50px 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 2500px;
+            margin: 0 auto;
+        }
+
+        /* Ensure the slider container has a fixed height */
+        .image-slider {
+            width: 80%;
+            height: 600px;
+            /* Adjust height as needed */
+            margin-right: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Ensure slides take up the full container size */
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        /* Show active slide */
+        .slide.active {
+            display: block;
+        }
+
+        /* Style for images inside slides */
+        .image-slider .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+
+        <div class="container">
+            <div class="image-slider">
+                <div class="slide">
+                    <img src="/img/Pic I.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="/img/hero.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="/img/Pic 3.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="wholeu.js"></script>
+</body>
+
+</html>
