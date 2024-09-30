@@ -22,14 +22,17 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   padding: 20px 0;
-  font-size: 13px;
+  font-size: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
 }
 
 .main-nav .logo {
@@ -61,14 +64,7 @@ body {
   border-bottom: 2px solid #262626;
 }
 
-.main-nav ul.main-menu {
-  flex: 1;
-  justify-content: flex-end;
-  padding-right: 50px;
-  font-size: 1rem;
-  gap: 3px;
-}
-
+/* Dropdown menu styles */
 .dropdown {
   display: none;
   position: absolute;
@@ -77,6 +73,9 @@ body {
   z-index: 1;
   top: 100%;
   left: 0;
+  width: max-content;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main-menu li:hover .dropdown {
@@ -84,7 +83,93 @@ body {
 }
 
 .dropdown a {
+  display: block;
+  padding: 10px;
   white-space: nowrap;
+  color: #333;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hamburger icon styles */
+.menu-btn {
+  display: none; /* Hidden by default */
+}
+
+.menu-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+.menu-icon .navicon {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  display: block;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 50px;
+  font-size: 1rem;
+  gap: 3px;
+}
+
+/* Responsive styles for mobile and tablet */
+@media (max-width: 768px) {
+  .main-nav ul {
+      display: none; /* Hidden by default */
+      flex-direction: column; /* Stack vertically */
+      position: absolute; /* Position absolute */
+      top: 60px; /* Below navbar */
+      right: -100%; /* Hidden off screen */
+      background-color: #fff; /* White background */
+      width: 80%; /* Set width to 80% */
+      transition: right 0.3s ease-out; /* Smooth transition */
+      z-index: 1002; /* Higher z-index for visibility */
+      overflow-y: auto; /* Enable scrolling */
+      padding-top: 20px; /* Space at the top */
+      border-bottom-left-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+
+  .menu-btn:checked ~ ul {
+      right: 0; /* Show menu when checked */
+      display: flex; /* Change to flex display */
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon */
+      z-index: 1003; /* Higher z-index for visibility */
+      padding-right: 50px; /* Right padding */
+  }
+
+  .main-nav ul li {
+      text-align: justify; /* Justify text */
+      padding: 15px 0; /* Space above and below */
+  }
+
+  .dropdown {
+      position: relative; /* Position relative */
+      width: 100%; /* Full width */
+      border: none; /* No border */
+      box-shadow: none; /* No shadow */
+      background-color: transparent; /* Transparent background */
+  }
+
+  .dropdown a {
+      padding-left: 30px; /* Space on the left */
+      font-size: 12px !important; /* Smaller font */
+  }
+
+  .main-nav ul li a {
+      font-size: 18px; /* Larger font for menu items */
+  }
 }
 
 /* Footer Krub */
