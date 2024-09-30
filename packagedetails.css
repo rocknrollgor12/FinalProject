@@ -49,6 +49,7 @@ header {
     box-shadow: none;
 }
 
+
 /* Package Header */
 .package-header {
     background-color: #fff;
@@ -67,10 +68,12 @@ header {
     height: auto;
 }
 
+
 /* Package Content - Combines description and additional packages */
 .package-content {
     padding: 40px;
 }
+
 
 /* Package Description */
 .package-description {
@@ -98,6 +101,7 @@ header {
     margin-bottom: 10px;
 }
 
+
 /* Additional Packages */
 .additional-package {
     display: flex;
@@ -120,6 +124,7 @@ header {
     margin-bottom: 15px;
 }
 
+
 /* Call to Action Button */
 .cta {
     background-color: #006641;
@@ -138,7 +143,8 @@ header {
     background-color: #004c30;
 }
 
-/* nav bar kub */
+
+/* Nav bar kub */
 .main-nav {
     display: flex;
     align-items: center;
@@ -180,6 +186,7 @@ header {
     border-bottom: 2px solid #262626;
 }
 
+
 /* Dropdown menu styles */
 .dropdown {
     display: none;
@@ -208,6 +215,7 @@ header {
 .dropdown a:hover {
     background-color: #f0f0f0;
 }
+
 
 /* Hamburger icon styles */
 .menu-btn {

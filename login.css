@@ -18,6 +18,8 @@ button {
   background: none;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+
+
 /* Banner krub */
 
 header {
@@ -230,7 +232,7 @@ header {
   position: relative;
   width: 900px;
   height: 550px;
-  margin: 10px auto 100px;
+  margin: 90px auto 90px;
   background: #fff;
 }
 
@@ -513,4 +515,51 @@ input {
   height: 20px;
   fill: #6f42c1;
   margin-left: 5px;
+}
+
+/* Your existing styles */
+
+/* Tablet Styles (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .main-nav ul {
+    /* Example: Make navigation horizontal */
+    flex-direction: column;
+  }
+}
+
+/* Mobile Styles (adjust breakpoint as needed) */
+@media (max-width: 480px) {
+  .main-nav ul {
+    /* Example: Hide dropdown, show toggle button */
+    display: none;
+  }
+}
+
+/* ... Your existing styles ... */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column; /* Stack navigation vertically */
+    padding: 10px 0;
+  }
+
+  .main-nav ul li {
+    padding: 5px 0;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* ... (Implementation for mobile navigation, hero, etc.) ... */
+
+  .footer .row {
+    flex-direction: column; /* Stack footer elements vertically */
+    align-items: center;
+  }
+
+  .footer .col-md-auto {
+    text-align: center; /* Center text in footer columns */
+    margin-bottom: 10px;
+  }
 }

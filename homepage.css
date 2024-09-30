@@ -1,6 +1,6 @@
 /*banner*/
 
-/* สำหรับ Webkit Browsers (Chrome, Safari) */
+/* For Webkit Browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 8px; /* ความกว้างของ scrollbar */
   height: 8px; /* ความสูงของ scrollbar สำหรับแนวนอน */
@@ -19,7 +19,7 @@
   background: #888; /* สีเมื่อ hover ที่ scrollbar */
 }
 
-/* สำหรับ Firefox */
+/* For Firefox */
 * {
   scrollbar-width: thin; /* scrollbar แบบบาง */
   scrollbar-color: #aaa transparent; /* สี scrollbar และ track */
@@ -48,7 +48,7 @@ header {
   justify-content: center;
 }
 
-/*nav bar*/
+/*Nav bar*/
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -91,6 +91,8 @@ body {
   color: #262626;
   display: block;
 }
+
+
 
 .main-nav ul li a:hover {
   border-bottom: 2px solid #262626;
@@ -324,11 +326,21 @@ body {
 }
 
 .image-slider {
-  width: 80%;
-  height: 600px;
-  margin-right: 20px;
+  width: 86%;
+  height: 336px;
   overflow: hidden;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+
+  .image-slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
 }
 
 .slide {
@@ -355,7 +367,7 @@ body {
 .service-menu {
   display: flex;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 90px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -373,8 +385,8 @@ body {
 }
 
 .service-item img {
-  width: 64px;
-  height: 64px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 10px;
 }
 
@@ -383,6 +395,16 @@ body {
   font-size: 12px;
   text-transform: uppercase;
 }
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
 
 /*nonprofit*/
 .Nonprofit {
@@ -561,3 +583,14 @@ body {
     margin-bottom: 10px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  
+  .main-nav ul.main-menu{
+    font-size: 20px !important;
+  }
+  
+  
+}
+
+
